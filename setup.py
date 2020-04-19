@@ -21,7 +21,7 @@ with (HERE / 'requirements' / 'minimal.txt').open() as f:
 # ----------------------------
 
 setup(name='routedsl',
-      version='0.0.1',
+      version='0.0.2',
       description='Route DSL',
       long_description=README,
       classifiers=[
@@ -38,7 +38,7 @@ setup(name='routedsl',
       author_email='maxim.avanov@gmail.com',
       url='https://maximavanov.com/',
       keywords='web',
-      packages=find_packages(),
+      packages=find_packages(exclude=['tests', 'tests.*']),
       include_package_data=True,
       zip_safe=False,
       test_suite='tests',
