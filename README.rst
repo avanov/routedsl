@@ -33,6 +33,8 @@ Compose everything in one place
 
 .. code-block:: python
 
+    from routedsl import *
+
     routes = Routes() (
         GET / 'users' / ('user_id', User, "User identifier")
             | HEADERS | Headers
@@ -73,4 +75,4 @@ Use nesting under common prefix
             | HANDLER | update_user_info
     )
 
-Read more in `Official Documentation <https://routedsl.readthedocs.io/en/develop/>`_.
+Find out more from `Official Documentation <https://routedsl.readthedocs.io/en/develop/>`_.
