@@ -1,6 +1,8 @@
 .. _badges:
 
-![Python package](https://github.com/avanov/routedsl/workflows/Python%20package/badge.svg)
+.. image:: https://github.com/avanov/routedsl/workflows/GitHub%20CI/badge.svg?branch=develop
+    :target: https://github.com/avanov/routedsl/actions?query=workflow%3A%22GitHub+CI%22
+
 .. image:: https://travis-ci.org/avanov/routedsl.svg?branch=develop
     :target: https://travis-ci.org/avanov/routedsl
 
@@ -60,8 +62,8 @@ or define pieces separately, then assemble your routing map:
     DefaultHeaders = HEADERS | Headers
     DefaultHandler = HANDLER | default_handler
 
-    DefaultEndpoint = GET / DefaultHeaders
-                          | DefaultHandler
+    DefaultEndpoint = ( GET / DefaultHeaders
+                            | DefaultHandler )
 
     routes = Routes() | DefaultEndpoint
 

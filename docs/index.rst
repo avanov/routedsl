@@ -42,8 +42,8 @@ or define pieces separately, then assemble your routing map:
     DefaultHeaders = HEADERS | Headers
     DefaultHandler = HANDLER | default_handler
 
-    DefaultEndpoint = GET / DefaultHeaders
-                          | DefaultHandler
+    DefaultEndpoint = ( GET / DefaultHeaders
+                            | DefaultHandler )
 
     routes = Routes() | DefaultEndpoint
 
