@@ -1,5 +1,6 @@
 .. _badges:
 
+![Python package](https://github.com/avanov/routedsl/workflows/Python%20package/badge.svg)
 .. image:: https://travis-ci.org/avanov/routedsl.svg?branch=develop
     :target: https://travis-ci.org/avanov/routedsl
 
